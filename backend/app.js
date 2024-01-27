@@ -8,7 +8,7 @@ app.use(express.json());
 
 app.use("/api/user", router);
 app.use("/api/blog", blogRouter);
-mongoose.connect('mongodb+srv://celilensar:34Celilens81@cluster0.gre1lp4.mongodb.net/Blog')
+mongoose.connect('mongodb+srv://secret:secret@cluster0.gre1lp4.mongodb.net/Blog')
 .then(() =>app.listen(5000))
 .then(()=> console.log("connected DB"))
 .catch((err)=> console.log(err));
